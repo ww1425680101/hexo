@@ -1939,7 +1939,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #704b9a;
+  background: #ffb901;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2809,4 +2809,16 @@ pre {
   width: 0;
   height: 2px;
   background: #6d6d6d;
+}
+body {
+  background: url("https://source.unsplash.com/random/1920x1080");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+.main-inner {
+  margin-top: 60px;
+  padding: 60px 60px 60px 60px;
+  background: #fff;
+  min-height: 500px;
 }
