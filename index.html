@@ -358,6 +358,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yuanfang.com/2018/04/23/VPS-锐速/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wei.wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="远方">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/23/VPS-锐速/" itemprop="url">vps+锐速</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-23T17:59:54+08:00">
+                2018-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vps/" itemprop="url" rel="index">
+                    <span itemprop="name">vps</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="VPS-锐速-BBR魔改版-实现超级加速"><a href="#VPS-锐速-BBR魔改版-实现超级加速" class="headerlink" title="VPS+锐速(BBR魔改版)实现超级加速"></a>VPS+锐速(BBR魔改版)实现超级加速</h1><h2 id="锐速加速简介"><a href="#锐速加速简介" class="headerlink" title="锐速加速简介"></a>锐速加速简介</h2><p>2006 年开始在美国硅谷设计研发新一代的 TCP 加速引擎，一种只需单边部署就可以起到显著加速效果的 TCP 加速技术，是目前业界唯一的智能学习及自适应单边 TCP 加速技术。锐速将独特的 ZetaTCP 专利技术用于加速以 Web 应用为代表的针对广大互联网用户访问的应用服务。锐速是一款内嵌 ZetaTCP 加速引擎的加速软件，可以安装运行在所有主流 Linux 版本和 Windows 操作系统版本的服务器，加速服务器的对外服务质量。锐速尤其适合具有较分散互联网用户访问的服务，能够显著提高距离服务器远，跨运营商访问服务器，和通过无线网络访问服务器的用户的体验，甚至将服务从原先的不可用变为可用。锐速内嵌的 ZetaTCP 还可以增强连接的稳定性，显著降低访问失败率。 锐速占用非常少的服务器 CPU 资源和内存资源。由于锐速可以很有效的处理突发大量 TCP 连接，锐速在相当多的情况下能够大幅降低服务器用于处理突发 TCP 连接的 CPU 开销，起到稳定 CPU 使用率，进而增加服务稳定性的作用。 综上所述，锐速通过加速用户访问连接，提高连接稳定性，和平滑服务器 CPU 使用率，全面提高应用服务质量，提升整体用户体验。</p>
+<h2 id="Ubuntu-16-04安装锐速"><a href="#Ubuntu-16-04安装锐速" class="headerlink" title="Ubuntu 16.04安装锐速"></a>Ubuntu 16.04安装锐速</h2><p>个人较偏向使用Ubuntu server操作快捷方便，出现问题可以快速解决。</p>
+<p><strong>声明：</strong>锐速只支持KVM虚拟主机,OpenVZ主机无法使用。大家在选取VPS的时候注意辨别。</p>
+<h3 id="开启BBR"><a href="#开启BBR" class="headerlink" title="开启BBR"></a>开启BBR</h3><p>执行下面脚本一键开启</p>
+<pre><code>wget --no-check-certificate -qO &apos;BBR.sh&apos; &apos;https://moeclub.org/attachment/LinuxShell/BBR.sh&apos; &amp;&amp; chmod a+x BBR.sh &amp;&amp; bash BBR.sh -f
+</code></pre><p>安装魔改版BBR</p>
+<pre><code>wget --no-check-certificate -qO &apos;BBR_POWERED.sh&apos; &apos;https://moeclub.org/attachment/LinuxShell/BBR_POWERED.sh&apos; &amp;&amp; chmod a+x BBR_POWERED.sh &amp;&amp; bash BBR_POWERED.sh
+</code></pre><p>完成后之后执行下面的命令检查是否安装成功</p>
+<pre><code>lsmod |grep &apos;bbr_powered&apos;
+</code></pre><p>结果输出有<code>tcp_bbr_powered</code>则为成功</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+   </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.yuanfang.com/2018/04/22/Linux之chmod命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -547,7 +701,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -558,7 +712,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -569,7 +723,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -700,7 +854,7 @@ show_date_time();
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共621字</span>
+  <span class="post-count">博客全站共1.2k字</span>
 </div>
 
         
