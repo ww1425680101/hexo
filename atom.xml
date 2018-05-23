@@ -5,9 +5,9 @@
   <subtitle>生活不止眼前的苟且;还有诗和远方。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.yuanfang.com/"/>
+  <link href="http://www.yuanfang.cf/"/>
   <updated>2018-05-13T10:56:34.412Z</updated>
-  <id>http://www.yuanfang.com/</id>
+  <id>http://www.yuanfang.cf/</id>
   
   <author>
     <name>wei.wang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>vps+锐速</title>
-    <link href="http://www.yuanfang.com/2018/05/13/VPS-%E9%94%90%E9%80%9F/"/>
-    <id>http://www.yuanfang.com/2018/05/13/VPS-锐速/</id>
+    <link href="http://www.yuanfang.cf/2018/05/13/VPS-%E9%94%90%E9%80%9F/"/>
+    <id>http://www.yuanfang.cf/2018/05/13/VPS-锐速/</id>
     <published>2018-05-13T09:59:54.000Z</published>
     <updated>2018-05-13T10:56:34.412Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="vps" scheme="http://www.yuanfang.com/categories/vps/"/>
+      <category term="vps" scheme="http://www.yuanfang.cf/categories/vps/"/>
     
     
-      <category term="锐速" scheme="http://www.yuanfang.com/tags/%E9%94%90%E9%80%9F/"/>
+      <category term="锐速" scheme="http://www.yuanfang.cf/tags/%E9%94%90%E9%80%9F/"/>
     
   </entry>
   
   <entry>
     <title>chmod 命令</title>
-    <link href="http://www.yuanfang.com/2018/04/22/Linux%E4%B9%8Bchmod%E5%91%BD%E4%BB%A4/"/>
-    <id>http://www.yuanfang.com/2018/04/22/Linux之chmod命令/</id>
+    <link href="http://www.yuanfang.cf/2018/04/22/Linux%E4%B9%8Bchmod%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.yuanfang.cf/2018/04/22/Linux之chmod命令/</id>
     <published>2018-04-22T07:00:54.000Z</published>
     <updated>2018-05-13T09:51:44.574Z</updated>
     
@@ -59,10 +59,10 @@
     
     </summary>
     
-      <category term="linux" scheme="http://www.yuanfang.com/categories/linux/"/>
+      <category term="linux" scheme="http://www.yuanfang.cf/categories/linux/"/>
     
     
-      <category term="chmod" scheme="http://www.yuanfang.com/tags/chmod/"/>
+      <category term="chmod" scheme="http://www.yuanfang.cf/tags/chmod/"/>
     
   </entry>
   
